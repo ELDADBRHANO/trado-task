@@ -1,0 +1,8 @@
+#userInputs{
+  display: flex;
+  flex-direction: column;
+}  
+
+input{
+  width: auto;
+}

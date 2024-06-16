@@ -36,3 +36,19 @@
     transform: rotate(360deg);
   }
 }
+
+#container{
+
+}
+
+#ButtonsDiv{
+  display: flex;
+    justify-content: space-around;
+}
+
+.buttons{
+  width: 15vw;
+  height: 20vh;
+  background-color: aquamarine;
+}
+
