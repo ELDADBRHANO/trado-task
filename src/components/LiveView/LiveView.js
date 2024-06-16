@@ -1,5 +1,5 @@
 import React from 'react';
-
+import './liveView.css'
 const LiveView = ({ content }) => {
   if (!content) return null;
 
@@ -14,7 +14,7 @@ const LiveView = ({ content }) => {
       );
     case 'images':
       return (
-        <div>
+        <div id='liveViewDiv'>
           {content.content.map((image) => (
             <img key={image.id} src={image.webformatURL} alt={image.tags} />
           ))}

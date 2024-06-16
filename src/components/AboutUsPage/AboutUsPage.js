@@ -1,3 +1,4 @@
+import './AboutUsPage.css'
 import React, { useState } from 'react';
 
 const AboutUsPage = ({ updateLiveView }) => {
@@ -13,7 +14,7 @@ const AboutUsPage = ({ updateLiveView }) => {
   };
 
   return (
-    <div>
+    <div id='userInputs'>
       <h2>About Us</h2>
       <input
         type="text"

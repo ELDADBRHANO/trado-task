@@ -1,3 +1,4 @@
+import './App.css'
 import React, { useState } from 'react';
 import AboutUsPage from './components/AboutUsPage/AboutUsPage'
 import ImagesPage from './components/ImagesPage/ImagesPage';
@@ -42,24 +43,28 @@ const App = () => {
   };
 
   return (
-    <div style={{ backgroundColor: primaryColor, color: secondaryColor }}>
-      <div>
-        <button onClick={() => setSelectedPage('about')}>About Us</button>
-        <button onClick={() => setSelectedPage('images')}>Images</button>
-        <button onClick={() => setSelectedPage('hours')}>Opening Hours</button>
+    <div id='container'>
+      <div id='box'>
+
+      <div id='ButtonsDiv'>
+        <button className='buttons' onClick={() => setSelectedPage('about')}>About Us</button>
+        <button className='buttons'onClick={() => setSelectedPage('images')}>Images</button>
+        <button className='buttons' onClick={() => setSelectedPage('hours')}>Opening Hours</button>
       </div>
-      <div style={{ display: 'flex' }}>
-        <div style={{ flex: 1 }}>
+      <div>
+        <div>
           {renderEditor()}
         </div>
-        <div style={{ flex: 1 }}>
+        <div>
           <LiveView content={liveViewContent} />
         </div>
       </div>
+      <br/>
       <div>
         <input type="file" accept="image/*" onChange={handleImageUpload} />
       </div>
     </div>
+      </div>
   );
 };
 
